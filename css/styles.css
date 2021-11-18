@@ -1,0 +1,149 @@
+*, div, html, body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	overflow: hidden;
+}
+body{
+	background-color: #f2f4f3;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;
+	-webkit-perspective: 1px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+.navbar{
+	width: 100%;
+	background-color: #f0c808;
+}
+.navbar a {
+	text-decoration: none;
+	color: inherit;
+}
+.navbarText{
+	display: inline-block;
+	margin: 2%;
+}
+.hamburger{
+	display: flex;
+	flex-direction: column;
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin: 1%;
+	background-color: inherit;
+}
+.hamBar{
+	height: 33%;
+	background-color: rgba(0, 0, 0, .5);
+	border: 1px solid #f0c808;
+	border-radius: 5px;
+	border-collapse: none;
+}
+.popup{
+	position: absolute;
+	display:  flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 2%, 0%, 2%, 0%;
+	width: 100%;
+	border-collapse: collapse;
+	z-index: 3;
+	background-color: #f2f4f3;
+}
+.popupItem{
+	padding: 3%;
+	border: 1px solid grey;
+	z-index: 3;
+}
+h2{
+	font-size: 20px;
+}
+.textContainer{
+	background-color: #f2f4f3;
+	padding: 3%;
+	display: flex;
+	width: 100%;
+	perspective: 2px;
+	-webkit-perspective:  2px;
+}
+h1{
+	font-size: 30px;
+}
+.hiddenImg{
+	display: none;
+}
+.innerText{
+	flex: 1;
+}
+img.parallax{
+	perspective: 1px;
+	position: relative;
+	top: 0px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	width: 100%;
+	transform: translateZ(-1px) scale(2) translateY(-30vh);
+	-webkit-transform: translateZ(-1px) translateY(-30vh) scale(2);
+}
+img.parallax:after {
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -1;
+	content: "";
+	
+}
+.imageContainer1, .imageContainer2{
+	padding: 1vh;
+	justify-content: center;
+	align-content: center;
+}
+.imageContainer1, .imageContainer1 img{
+	display: none;
+}
+.imageContainer2 img{
+	width: 100%;
+}
+.button{
+	width:  96%;
+	margin: 2%;
+	padding: 2%;
+	background-color: #f0c808;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+.reveiws{
+	background-color: #f2f4f3;
+	padding: 3%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	perspective: 2px;
+	-webkit-perspective:  2px;
+}
+.reveiw{
+	background-color: #0021;
+	border: 1px solid black;
+	border-radius: 4px;
+	margin: 2%;
+	padding: 2%;
+}
+
+@media only screen and (min-width: 768px){
+	.hamburger{
+		display: none;
+	}
+	.hiddenImg{
+		display: inline-block;
+		flex: 1;
+	}
+}
