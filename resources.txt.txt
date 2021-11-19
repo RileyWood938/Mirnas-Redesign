@@ -4,4 +4,7 @@ https://www.w3schools.com/js/js_htmldom_css.asp
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 https://www.javatpoint.com/javascript-onclick-event
 https://orangeable.com/css/parallax-scroll#:~:text=Parallax%20scrolling%20is%20a%20technique%20used%20to%20make,output%20in%20a%202D%20format%20on%20the%20screen.
+https://www.rapidtables.com/web/html/html-codes/html-code-copyright.html
+https://keithclark.co.uk/articles/pure-css-parallax-websites/
+https://www.w3docs.com/snippets/css/how-to-set-the-size-of-the-background-image.html
 https://stackoverflow.com/questions/13637223/how-do-you-make-a-div-tabbable#:~:text=for%20those%20interested%2C%20in%20addition%20to%20the%20accepted,tabindex%3D%220%22%20attribute%20to%20each%20div%20you%20want%20tabbable.

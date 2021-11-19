@@ -67,10 +67,7 @@ h2{
 .textContainer{
 	background-color: #f2f4f3;
 	padding: 3%;
-	display: flex;
 	width: 100%;
-	perspective: 2px;
-	-webkit-perspective:  2px;
 }
 h1{
 	font-size: 30px;
@@ -81,16 +78,32 @@ h1{
 .innerText{
 	flex: 1;
 }
-img.parallax{
+
+.parallax{
 	perspective: 1px;
-	position: relative;
-	top: 0px;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-	width: 100%;
-	transform: translateZ(-1px) scale(2) translateY(-30vh);
-	-webkit-transform: translateZ(-1px) translateY(-30vh) scale(2);
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	}
+.parallax_layer{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
+.parallax_layer--base{
+	transform: translateZ(0);
+}
+.parallax_layer--back{
+	transform: translateZ(-1px) scale(2) translateY(-21vh);
+}
+.parallax_group{
+	position: relative;
+	height: 100vh;
+	transform-style: preserve-3d;
+}
+/*
 img.parallax:after {
 	background-repeat: no-repeat;
 	position: absolute;
@@ -102,6 +115,7 @@ img.parallax:after {
 	content: "";
 	
 }
+*/
 .imageContainer1, .imageContainer2{
 	padding: 1vh;
 	justify-content: center;
