@@ -7,7 +7,7 @@ html{
 	overflow: hidden;
 }
 body{
-	background-color: #f2f4f3;
+	background-color: #086788;
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
@@ -20,14 +20,22 @@ body{
 .navbar{
 	width: 100%;
 	background-color: #f0c808;
+	
 }
 .navbar a {
 	text-decoration: none;
 	color: inherit;
+
 }
 .navbarText{
 	display: inline-block;
 	margin: 2%;
+}
+.navComponent{
+	justify-content: center;
+	align-items: center;
+	display: none;
+	margin: auto;
 }
 .hamburger{
 	display: flex;
@@ -68,6 +76,8 @@ h2{
 	background-color: #f2f4f3;
 	padding: 3%;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 h1{
 	font-size: 30px;
@@ -77,6 +87,7 @@ h1{
 }
 .innerText{
 	flex: 1;
+	z-index: 1;
 }
 
 .parallax{
@@ -100,7 +111,7 @@ h1{
 }
 .parallax_group{
 	position: relative;
-	height: 100vh;
+	height: 125vh;
 	transform-style: preserve-3d;
 }
 /*
@@ -151,13 +162,71 @@ img.parallax:after {
 	margin: 2%;
 	padding: 2%;
 }
+.cakeimg{
+	width: 100%; 
+	transform: translateY(75vh) scale(2.5);
+}
+.hiddenText{
+	display: none;
+}
 
 @media only screen and (min-width: 768px){
+	.navbar{
+		display: flex;
+		flex-direction: row;
+	}
+	.navbarText{
+		margin-right: 15%;
+	}
+	.navComponent{
+		display: inherit;
+	}
+	p{
+		font-size: 1.5em;
+	}
 	.hamburger{
 		display: none;
 	}
 	.hiddenImg{
 		display: inline-block;
 		flex: 1;
+		margin: 2%;
+		height: 64vh;
+	}
+	.parallax{
+		perspective: 1px;
+		height: 135vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.parallax_layer{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.parallax_layer--base{
+		transform: translateZ(0);
+	}
+	.parallax_layer--back{
+		transform: translateZ(-1px) scale(2) translateY(-21vh);
+	}
+	.parallax_group{
+		position: relative;
+		height: 185vh;
+		transform-style: preserve-3d;
+	}
+	.cakeimg{
+		width: 50%; 
+		transform: translateY(50vh) scale(2.5);
+		margin: auto;
+	}
+	.hiddenText{
+		display: block;
+	}
+	.displayArea{
+		display: flex;
+		background-color: #f2f4f3;
 	}
 }
