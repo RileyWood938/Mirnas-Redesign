@@ -152,8 +152,6 @@ img.parallax:after {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	perspective: 2px;
-	-webkit-perspective:  2px;
 }
 .reveiw{
 	background-color: #0021;
@@ -218,8 +216,8 @@ img.parallax:after {
 		transform-style: preserve-3d;
 	}
 	.cakeimg{
-		width: 50%; 
-		transform: translateY(50vh) scale(2.5);
+		width: 100%; 
+		transform: translateY(50vh);
 		margin: auto;
 	}
 	.hiddenText{
@@ -228,5 +226,28 @@ img.parallax:after {
 	.displayArea{
 		display: flex;
 		background-color: #f2f4f3;
+	}
+	.button{
+		width:  40%;
+		margin: .5%;
+		padding: 1%;
+		margin-left: 30%;
+	}
+	.reveiws{
+		padding: 1%;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	.reveiw{
+		margin: 1%;
+		padding: 2%;
+		flex: 1;
+	}
+	h4{
+		font-size: 1.5em;
+	}
+	h3{
+		font-size: 1.75em;
 	}
 }
