@@ -250,4 +250,7 @@ img.parallax:after {
 	h3{
 		font-size: 1.75em;
 	}
+	.reveiw:hover{
+		box-shadow: 5px 5px 10px black;
+	}
 }
