@@ -7,7 +7,7 @@ html{
 	overflow: hidden;
 }
 body{
-	background-color: #086788;
+	background-color: #06aed5;
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
@@ -19,7 +19,7 @@ body{
 }
 .navbar{
 	width: 100%;
-	background-color: #f0c808;
+	background-color: #06aed5;
 	
 }
 .navbar a {
@@ -30,6 +30,8 @@ body{
 .navbarText{
 	display: inline-block;
 	margin: 2%;
+	font-family: Helvetica;
+	font-weight: bold;
 }
 .navComponent{
 	justify-content: center;
@@ -49,7 +51,7 @@ body{
 .hamBar{
 	height: 33%;
 	background-color: rgba(0, 0, 0, .5);
-	border: 1px solid #f0c808;
+	border: 1px solid #06aed5;
 	border-radius: 5px;
 	border-collapse: none;
 }
@@ -81,6 +83,17 @@ h2{
 }
 h1{
 	font-size: 30px;
+	color: dd1c1a;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+h3{
+	color: black;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+h4{
+	font-family: Helvetica;
 }
 .hiddenImg{
 	display: none;
@@ -142,9 +155,11 @@ img.parallax:after {
 	width:  96%;
 	margin: 2%;
 	padding: 2%;
-	background-color: #f0c808;
+	background-color: #06aed5;
 	border: 1px solid black;
 	border-radius: 3px;
+	font-family: Helvetica;
+	font-weight: bold;
 }
 .reveiws{
 	background-color: #f2f4f3;
@@ -154,7 +169,7 @@ img.parallax:after {
 	width: 100%;
 }
 .reveiw{
-	background-color: #0021;
+	background-color: #f0c808;
 	border: 1px solid black;
 	border-radius: 4px;
 	margin: 2%;
@@ -189,7 +204,7 @@ img.parallax:after {
 		display: inline-block;
 		flex: 1;
 		margin: 2%;
-		height: 64vh;
+		height: 40vw;
 	}
 	.parallax{
 		perspective: 1px;
@@ -252,5 +267,11 @@ img.parallax:after {
 	}
 	.reveiw:hover{
 		box-shadow: 5px 5px 10px black;
+	}
+	.button{
+		background-color: #f0c808;
+	}
+	.button:hover{
+		box-shadow: 2px 2px 5px black;
 	}
 }
