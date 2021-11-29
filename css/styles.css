@@ -189,10 +189,16 @@ form {
 input{
 	padding: 1%;
 }
+input[type=submit]{
+	width: 50%;
+}
 
 @media only screen and (min-width: 768px){
 	input{
 		width: 75%;
+	}
+	input[type=submit]{
+	width: 10%;
 	}
 	.navbar{
 		display: flex;
