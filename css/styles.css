@@ -200,12 +200,7 @@ img.parallax:after {
 	.hamburger{
 		display: none;
 	}
-	.hiddenImg{
-		display: inline-block;
-		flex: 1;
-		margin: 2%;
-		height: 40vw;
-	}
+	
 	.parallax{
 		perspective: 1px;
 		height: 135vh;
@@ -234,13 +229,6 @@ img.parallax:after {
 		width: 100%; 
 		transform: translateY(50vh);
 		margin: auto;
-	}
-	.hiddenText{
-		display: block;
-	}
-	.displayArea{
-		display: flex;
-		background-color: #f2f4f3;
 	}
 	.button{
 		width:  40%;
@@ -273,5 +261,21 @@ img.parallax:after {
 	}
 	.button:hover{
 		box-shadow: 2px 2px 5px black;
+	}
+}
+
+@media only screen and (min-width: 560px){
+		.hiddenText{
+		display: block;
+	}
+	.hiddenImg{
+		display: inline-block;
+		flex: 1;
+		margin: 2%;
+		height: 40vw;
+	}
+		.displayArea{
+		display: flex;
+		background-color: #f2f4f3;
 	}
 }
