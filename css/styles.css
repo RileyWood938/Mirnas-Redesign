@@ -182,8 +182,18 @@ img.parallax:after {
 .hiddenText{
 	display: none;
 }
+form {
+	display: flex;
+	flex-direction: column;
+}
+input{
+	padding: 1%;
+}
 
 @media only screen and (min-width: 768px){
+	input{
+		width: 75%;
+	}
 	.navbar{
 		display: flex;
 		flex-direction: row;
