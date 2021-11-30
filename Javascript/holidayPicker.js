@@ -1,17 +1,27 @@
-nextHoliday = new Date();
+today = new Date();
+nextClosure = new Date ()
+christmas = new Date("12-24-21");
+ExtraDate = new Date("12-20-21");
+newYearsDay = new Date("12-31-21");
+MLKDay = new Date("01-17-22");
+
+holidays = [christmas, ExtraDate, newYearsDay, MLKDay];
+
+intermediate = [];
+
 var i=0;
 
-do {
-	nextHolidayStr=nextHoliday.toLocaleDateString('en-us',{day:"numeric", month:"numeric", year: "numeric"});
-	console.log(nextHolidayStr);
+for(i=0; i<holidays.length; i++){
 
-	if(nextHolidayStr=="12/24/2021"){
-		console.log("Christmas");
-		i=1;
-	}else{
-		console.log("not Christmas");
-		nextHoliday.setDate(nextHoliday.getDate()+86400000)
-		i=0;
+	if(today.getTime()-holidays[i].getTime()<0){
+		intermediate[i] = -1*(today.getTime()-holidays[i])
+	 	console.log(holidays[i] + " " + intermediate[i])
 	}
+
 }
-while(i==0);
+
+min = Math.min(...intermediate);
+console.log(intermediate.indexOf(min));
+console.log(min)
+nextClosure.setDate(holidays[min]);
+console.log("next closure is: "+ nextClosure.toString())
