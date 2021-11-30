@@ -26,7 +26,11 @@ https://stackoverflow.com/questions/8934877/obtain-smallest-value-from-array-in-
 https://www.w3schools.com/js/js_date_methods.asp
 https://www.w3schools.com/js/js_loop_for.asp
 https://stackoverflow.com/questions/41089858/matching-a-number-to-closest-number-in-a-set-in-javascript
-
-
-
+https://www.w3schools.com/howto/howto_css_overlay.asp
+https://stackoverflow.com/questions/6256043/css-position-loading-indicator-in-the-center-of-the-screen
+https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
+https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+https://www.w3schools.com/tags/att_input_type_checkbox.asp
+https://helpx.adobe.com/acrobat/kb/link-html-pdf-page-acrobat.html
+https://kbpdfstudio.qoppa.com/how-to-create-a-web-link-that-opens-a-pdf-file-to-specific-page/#:~:text=An%20HTML%20link%20can%20be%20used%20to%20open,a%20PDF%20file%20named%20sample.pdf%20to%20page%204%3A
 https://stackoverflow.com/questions/13637223/how-do-you-make-a-div-tabbable#:~:text=for%20those%20interested%2C%20in%20addition%20to%20the%20accepted,tabindex%3D%220%22%20attribute%20to%20each%20div%20you%20want%20tabbable.

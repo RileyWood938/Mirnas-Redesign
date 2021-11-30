@@ -3,19 +3,8 @@
 	margin: 0;
 	padding: 0;
 }
-html{
-	overflow: hidden;
-}
 body{
 	background-color: #06aed5;
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-	perspective: 1px;
-	-webkit-perspective: 1px;
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
 }
 .navbar{
 	width: 100%;
@@ -92,52 +81,6 @@ h3{
 	font-weight: bold;
 	font-family: Helvetica;
 }
-h4{
-	font-family: Helvetica;
-}
-.hiddenImg{
-	display: none;
-}
-.innerText{
-	flex: 1;
-	z-index: 1;
-}
-
-.parallax{
-	perspective: 1px;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-	}
-.parallax_layer{
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-.parallax_layer--base{
-	transform: translateZ(0);
-}
-.parallax_layer--back{
-	transform: translateZ(-1px) scale(2) translateY(-21vh);
-}
-.parallax_group{
-	position: relative;
-	height: 125vh;
-	transform-style: preserve-3d;
-}
-.imageContainer1, .imageContainer2{
-	padding: 1vh;
-	justify-content: center;
-	align-content: center;
-}
-.imageContainer1, .imageContainer1 img{
-	display: none;
-}
-.imageContainer2 img{
-	width: 100%;
-}
 .button{
 	width:  96%;
 	margin: 2%;
@@ -148,25 +91,7 @@ h4{
 	font-family: Helvetica;
 	font-weight: bold;
 }
-.reveiws{
-	background-color: #f2f4f3;
-	padding: 3%;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-.reveiw{
-	background-color: #f0c808;
-	border: 1px solid black;
-	border-radius: 4px;
-	margin: 2%;
-	padding: 2%;
-}
-.cakeimg{
-	width: 100%; 
-	transform: translateY(75vh) scale(2.5);
-}
-.hiddenText{
+.hiddenImg{
 	display: none;
 }
 form {
@@ -206,30 +131,15 @@ input [type='checkbox']{
 .orderNum{
 	width: 10%;
 }
-.locationBox{
-	width: 80%;
-	margin: auto;
-	background-color: f2f4f3;
+.menuButton{
 	padding: 2%;
+	background-color: #f2f4f3;
+	border: 1px solid black;
+	width: 40%;
+	margin: 1%;
+	margin-left: 0%;
 }
 @media only screen and (min-width: 768px){
-	.locationBox{
-	width: 50%;
-	display: flex;
-	}
-	.row{ 
-	flex-direction: row;
-	}
-	.column{
-	flex: 1;
-	max-width: 33%;
-	}
-	input{
-		width: 75%;
-	}
-	input[type=submit]{
-	width: 10%;
-	}
 	.navbar{
 		display: flex;
 		flex-direction: row;
@@ -247,51 +157,11 @@ input [type='checkbox']{
 		display: none;
 	}
 	
-	.parallax{
-		perspective: 1px;
-		height: 135vh;
-		overflow-x: hidden;
-		overflow-y: auto;
-	}
-	.parallax_layer{
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-	}
-	.parallax_layer--base{
-		transform: translateZ(0);
-	}
-	.parallax_layer--back{
-		transform: translateZ(-1px) scale(2) translateY(-21vh);
-	}
-	.parallax_group{
-		position: relative;
-		height: 185vh;
-		transform-style: preserve-3d;
-	}
-	.cakeimg{
-		width: 100%; 
-		transform: translateY(50vh);
-		margin: auto;
-	}
 	.button{
 		width:  40%;
 		margin: .5%;
 		padding: 1%;
 		margin-left: 30%;
-	}
-	.reveiws{
-		padding: 1%;
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-	}
-	.reveiw{
-		margin: 1%;
-		padding: 2%;
-		flex: 1;
 	}
 	h4{
 		font-size: 1.5em;
@@ -299,14 +169,36 @@ input [type='checkbox']{
 	h3{
 		font-size: 1.75em;
 	}
-	.reveiw:hover{
-		box-shadow: 5px 5px 10px black;
+	input{
+		padding: .5%;
+		width: 40%;
+		margin: .1%;
+		margin-left: 0%;
+	}
+	input[type='number']{
+		width: 3.5%;
+	}
+	input[type='date']{
+		width: 15%;
+	}
+	input[type='submit']{
+		width: 15%;
+	}
+	#fphone{
+		width: 20%;
+	}
+	.menuButton{
+	padding: .5%;
+	width: 10%;
 	}
 	.button{
 		background-color: #f0c808;
 	}
 	.button:hover{
 		box-shadow: 2px 2px 5px black;
+	}
+	label{
+		font-size: 1.5em;
 	}
 }
 
@@ -316,9 +208,9 @@ input [type='checkbox']{
 	}
 	.hiddenImg{
 		display: inline-block;
-		flex: 1;
+		flex: .5;
 		margin: 2%;
-		height: 40vw;
+		height: 25vw;
 	}
 		.displayArea{
 		display: flex;
