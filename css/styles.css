@@ -1,12 +1,12 @@
-*, div, html, body{
+*, div, html, body{/*reset the page's base settings so that content stretches the whole width*/
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-html{
+html{/*setup for parralax purposes*/
 	overflow: hidden;
 }
-body{
+body{/*this is also mostly paralax setup*/
 	background-color: #06aed5;
 	width: 100vw;
 	height: 100vh;
@@ -22,12 +22,14 @@ body{
 	background-color: #06aed5;
 	
 }
-.navbar a {
+.navbar a {/*adjust the look of the elemnts of the navbar*/
 	text-decoration: none;
 	color: inherit;
-
 }
-.navbarText{
+.navbar a:hover{
+	cursor: pointer;
+}
+.navbarText{/*style the page title*/
 	display: inline-block;
 	margin: 2%;
 	font-family:"Lucida Handwriting";
@@ -40,7 +42,7 @@ body{
 	display: none;
 	margin: auto;
 }
-.hamburger{
+.hamburger{/*style the hamburgur menu*/
 	display: flex;
 	flex-direction: column;
 	float: right;
@@ -49,14 +51,14 @@ body{
 	margin: 1%;
 	background-color: inherit;
 }
-.hamBar{
+.hamBar{/*add the rounded corners to the individual parts of the hamburgur menu*/
 	height: 33%;
 	background-color: rgba(0, 0, 0, .5);
 	border: 1px solid #06aed5;
 	border-radius: 5px;
 	border-collapse: none;
 }
-.popup{
+.popup{/*style the popup so that the contents are displayed in a vertical stack*/
 	position: absolute;
 	display:  flex;
 	flex-direction: column;
@@ -76,7 +78,7 @@ h2{
 	font-size: 3em;
 	font-family: Helvetica;
 }
-.textContainer{
+.textContainer{/*setup a general use text containing element*/
 	background-color: #f2f4f3;
 	padding: 3%;
 	width: 100%;
@@ -97,7 +99,7 @@ h3{
 h4{
 	font-family: Helvetica;
 }
-.hiddenImg{
+.hiddenImg{/*hide the hidden image since this is the part of the stylesheet for mobile*/
 	display: none;
 }
 .innerText{
@@ -105,7 +107,7 @@ h4{
 	z-index: 1;
 }
 
-.parallax{
+.parallax{/*begin the parralax styling*/
 	perspective: 1px;
 	height: 100vh;
 	overflow-x: hidden;
@@ -121,10 +123,10 @@ h4{
 .parallax_layer--base{
 	transform: translateZ(0);
 }
-.parallax_layer--back{
+.parallax_layer--back{/*move the backgroud image back 1 px and scale it up so that it looks right and scrolls more slowly. also move it up so that itfalls properly into place*/
 	transform: translateZ(-1px) scale(2) translateY(-21vh);
 }
-.parallax_group{
+.parallax_group{/*create a style for the second round of parralax images*/
 	position: relative;
 	height: 125vh;
 	transform-style: preserve-3d;
@@ -140,7 +142,7 @@ h4{
 .imageContainer2 img{
 	width: 100%;
 }
-.button{
+.button{/*style the navigation buttons on the home page*/
 	width:  96%;
 	margin: 2%;
 	padding: 2%;
@@ -150,15 +152,15 @@ h4{
 	font-family: Helvetica;
 	font-weight: bold;
 }
-.reveiws{
-	background-color: #f2f4f3;
+.reveiws{/*display the reveiws in a collumn*/
+	background-color: #f0c808;
 	padding: 3%;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
 .reveiw{
-	background-color: #f0c808;
+	background-color: #f2f4f3;
 	border: 1px solid black;
 	border-radius: 4px;
 	margin: 2%;
@@ -178,7 +180,7 @@ form {
 input{
 	padding: 1%;
 }
-input[type=submit]{
+input[type=submit]{/*style just for the submit button*/
 	width: 50%;
 }
 /*style for the image grid*/
@@ -192,7 +194,7 @@ input[type=submit]{
 .column{
 	flex: 1;
 }
-.column img{
+.column img{/*addint this position:relative is required for the box-shadow to appear on top of other images*/
 	vertical-align: middle;
 	width: 100%;
 	position: relative;
@@ -217,15 +219,15 @@ input [type='checkbox']{
 p{
 	font-family: Helvetica;
 }
-@media only screen and (min-width: 768px){
-	.locationBox{
+@media only screen and (min-width: 768px){/*this style effects non-mobile sites*/
+	.locationBox{/*make the location items show up horizontally on big screens*/
 	width: 50%;
 	display: flex;
 	}
-	.row{ 
+	.row{ /*make the rows of the image grid appear horizonally rather than vertically*/
 	flex-direction: row;
 	}
-	.column{
+	.column{/*change the columns of the image grid to take up 1/3 of the screen rather than all of it*/
 	flex: 1;
 	max-width: 33%;
 	}
@@ -252,7 +254,7 @@ p{
 		display: none;
 	}
 	
-	.parallax{
+	.parallax{/*change some parts of the parralax setup so it isn't broken*/
 		perspective: 1px;
 		height: 135vh;
 		overflow-x: hidden;
@@ -287,7 +289,7 @@ p{
 		padding: 1%;
 		margin-left: 30%;
 	}
-	.reveiws{
+	.reveiws{/*make the reveiws appear ina  line rather than a column*/
 		padding: 1%;
 		display: flex;
 		flex-direction: row;
@@ -304,7 +306,7 @@ p{
 	h3{
 		font-size: 1.75em;
 	}
-	.reveiw:hover{
+	.reveiw:hover{/*add a hover effect to the reviews*/
 		box-shadow: 5px 5px 10px black;
 	}
 	.button{
@@ -315,7 +317,7 @@ p{
 	}
 }
 
-@media only screen and (min-width: 560px){
+@media only screen and (min-width: 560px){/*change a couple things on large tablets/small computers*/
 		.hiddenText{
 		display: block;
 	}

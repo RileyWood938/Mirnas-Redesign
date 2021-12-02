@@ -9,12 +9,12 @@ This is NOT the actual Mirna's cuban cuisine website, this was created for a cla
 </head>
 
 <body onload="alert('This is not the real Mirnas Cuban Cuisine Website. This was created for a school project.')">
-	<div style="position: sticky; top: 0px; z-index: 2;">
-		<div style="background-color: #dd1c1a;">Disclaimer: this is NOT the actual Mirna's cuban cuisine website. It was created for a class project and you can find the real site <a href="https://www.mirnascubancuisine.com/" target="_blank">here</a></div>
-		<div class="navbar">
-
-			<p class="navbarText"><a href="index.html">Mirna's Cuban Cuisine</a></p>
-			<div class="navComponent">
+	<div style="position: sticky; top: 0px; z-index: 2;"> <!--setup for disclaimer-->
+		<div style="background-color: #dd1c1a;"><p>Disclaimer: this is NOT the actual Mirna's cuban cuisine website. It was created for a class project and you can find the real site <a href="https://www.mirnascubancuisine.com/" target="_blank">here</a></p></div>
+		
+		<div class="navbar"><!--navbar class hangs out at the top of the screen just under the disclaimer-->
+			<p class="navbarText"><a href="index.html">Mirna's Cuban Cuisine</a></p> <!--page title, also links to home page. this class only appears here but I cant be btohered to rename it-->
+			<div class="navComponent"><!--navcomponents are links to other pages, but also dissapear on mobile to make room for the hamburgur menu-->
 				<p><a href="index.html">Home</a></p>
 			</div>
 			<div class="navComponent">
@@ -33,50 +33,51 @@ This is NOT the actual Mirna's cuban cuisine website, this was created for a cla
 				<p><a href="gallery.html">Gallery</a></p>
 			</div>
 
-			<div class="hamburger" id="hamburger" tabindex="0">
-				<div class="hamBar"></div>
+			<div class="hamburger" id="hamburger" tabindex="0"> <!--Create the hamburgur menu-->
+				<div class="hamBar"></div> <!--I used these 3 colored divs to make the ham menu picture rather than getting an image-->
 				<div class="hamBar"></div>
 				<div class="hamBar"></div>
 			</div>
 		</div>
-		<div class="popup" id="popup" style="display: none;">
-		<div class="popupItem">
-			<h2><a href="index.html">Home</a></h2>
+		<div class="popup" id="popup" style="display: none;"> <!--The popup appears when the ham icon is clicked-->
+			<div class="popupItem"><!--these arre the components of the navigation popup-->
+				<h2><a href="index.html">Home</a></h2>
+			</div>
+			<div class="popupItem">
+				<h2><a href="images/menu.pdf">Menu</a></h2>
+			</div>
+			<div class="popupItem">
+				<h2><a href="location.html">Location/Hours</a></h2>
+			</div>
+			<div class="popupItem">
+				<h2><a href="services.html">Services</a></h2>
+			</div>
+			<div class="popupItem">
+				<h2><a href="location.html#contact">Contact</a></h2>
+			</div>
+			<div class="popupItem">
+				<h2><a href="gallery.html">Gallery</a></h2>
+			</div>
 		</div>
-		<div class="popupItem">
-			<h2><a href="images/menu.pdf">Menu</a></h2>
-		</div>
-		<div class="popupItem">
-			<h2><a href="location.html">Location/Hours</a></h2>
-		</div>
-		<div class="popupItem">
-			<h2><a href="services.html">Services</a></h2>
-		</div>
-		<div class="popupItem">
-			<h2><a href="location.html#contact">Contact</a></h2>
-		</div>
-		<div class="popupItem">
-			<h2><a href="gallery.html">Gallery</a></h2>
-		</div>
-	</div>
 	</div>
 
 	
-	<div class="parallax">
+	<div class="parallax"><!--The main page content begins here with the parallax setup (since this was my first time doing parralax I think this is not a super effecient setup, btu it does work, and I made the fantastic choice to get teh parallax working *before* I built everything else-->
 		<div class="parallax_group">
-			<img src="images/mirnasBanner.png" class="parallax_layer parallax_layer--back" style="width: 100%">
-			<div class="parallax_layer parallax_layer--base ">
+			<img src="images/mirnasBanner.png" class="parallax_layer parallax_layer--back" style="width: 100%"><!--Mirna's banner as parralx background image-->
+			<div class="parallax_layer parallax_layer--base "><!--hre's all the content that lives on top of the background-->
 				<div class="innerText">
 					<img src="images/mirnasBanner.png" style="width: 90vw; visibility: hidden;"> <!-- This only serves as a spacer and seems like the wrong way to do things-->
 					<div class="displayArea">
-						<img src="images/foodplate2.png" class="hiddenImg">
-						<div class="textContainer">
-							<h1 style="margin: 1%;">Mirna's Cuban Cuisine</h1>
+						<img src="images/foodplate2.png" class="hiddenImg"><!--the hidden image only appears on desktop-->
+						<div class="textContainer" style="justify-content: center;">
+							<h1 >Mirna's Cuban Cuisine</h1>
+							<br>
 							<p>Mirna's Cuban Cuisine offers a unique dining experience that you won’t find elsewhere in Sarasota! We bring you delicious Cuban cuisine that is guaranteed to make your taste buds sing.</p>
 							<br>
 							<p>We pride ourselves in our ability to craft all of our food from scratch, and using only fresh and natural ingredients. We offer the best price, are a family restaurant and everything is made to order—even the desserts are made fresh. Our customer satisfaction is our number No.1 concern. We want the customer to feel like if they had travel to Cuba to eat our authentic cuban cuisine.</p>
 							<br>
-							<p class="hiddenText">
+							<p class="hiddenText"><!--much like the hidden image, hidden text only appears on desktop-->
 								While our food is fantastic, it’s our service that really sets us apart. You come for the Cuban cuisine, but you stay for our quality, generous portions, moderate pricing and friendly attitude. We fully embrace the Cuban lifestyle and our restaurant is designed to reflect the ethnic and cultural themes in a way that our guests will love.
 							</p>
 							<br>
@@ -87,21 +88,21 @@ This is NOT the actual Mirna's cuban cuisine website, this was created for a cla
 					</div>
 				</div>
 			</div>
-			<div class="parallax_layer parallax_layer--back" >
-				<img src="images/Cake1.png" class="parallax_layer parallax_layer--back cakeimg">
+			<div class="parallax_layer parallax_layer--back" > <!--create the second parralax setup-->
+				<img src="images/Cake1.png" class="parallax_layer parallax_layer--back cakeimg"><!--second parralax image. It shouldn't have its own class but it's too late-->
 			</div>
 		</div>
-		<div class="parallax_group">
+		<div class="parallax_group"><!--second set of parralax content-->
 			<div class="textContainer" style="flex-direction: column; width: 100%; justify-content: center; align-content: center;">
-				<a href="images/menu.pdf"><button class="button">Veiw our Menu</button></a>
-				<a href="location.html"><button class="button">Visit our Location</button></a>
-				<a href="services.html#orderAhead"><button class="button">Order Ahead</button></a>
+				<a href="images/menu.pdf"><button class="button"><p>Veiw our Menu</p></button></a><!--make some navigation buttons-->
+				<a href="location.html"><button class="button"><p>Visit our Location</p></button></a>
+				<a href="services.html#orderAhead"><button class="button"><p>Order Ahead</p></button></a>
 			</div>
 
-			<div class="textContainer" style="padding-bottom: 1%; background-color: #f2f4f3;">
+			<div class="textContainer" style="padding-bottom: 1%; background-color: #f0c808;">
 				<h3>What People Are Saying:</h3>
 			</div>
-			<div class="reveiws">
+			<div class="reveiws"><!--this class displays the reveiws horizontally on desktop, but vertically on mobile-->
 				<div class="reveiw">
 					<h4>5 Stars</h4>
 					<p>11/11/21 EXCELLENT!! All home made and authentic!!!</p>
@@ -116,7 +117,7 @@ This is NOT the actual Mirna's cuban cuisine website, this was created for a cla
 				</div>
 				<div class="reveiw">
 					<h4>4 Stars</h4>
-					<p>Lots of food very good and a very friendly staff . Small but very cozy place a good place.</p>
+					<p>Lots of food very good and a very friendly staff. Small but very cozy place a good place.</p>
 				</div>
 				<div class="reveiw">
 					<h4>5 Stars</h4>
@@ -133,7 +134,7 @@ This is NOT the actual Mirna's cuban cuisine website, this was created for a cla
 		</div>
 			
 	</div>	
-	<script src="Javascript/hamMenuScript.js"></script>
+	<script src="Javascript/hamMenuScript.js"></script><!--add javascript at the end-->
 	<script src="Javascript/alert.js"></script>
 </body>
 </html>

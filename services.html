@@ -5,8 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="css/serviceStyles.css">
 </head>
 <body>
-	<div style="position: sticky; top: 0px; z-index: 2;">
-		<div style="background-color: #dd1c1a;">Disclaimer: this is NOT the actual Mirna's cuban cuisine website. It was created for a class project and you can find the real site <a href="https://www.mirnascubancuisine.com/" target="_blank">here</a></div>
+	<div style="position: sticky; top: 0px; z-index: 2;"><!--not commneting the header for this page, check index.html for my comments on it's setup-->
+		<div style="background-color: #dd1c1a;"><p>Disclaimer: this is NOT the actual Mirna's cuban cuisine website. It was created for a class project and you can find the real site <a href="https://www.mirnascubancuisine.com/" target="_blank">here</a></p></div>
 		<div class="navbar">
 
 			<p class="navbarText"><a href="index.html">Mirna's Cuban Cuisine</a></p>
@@ -68,11 +68,11 @@
 				</div>
 				
 			</div>
-			<div style="flex: 1; " class="hiddenImg">
+			<div style="flex: 1; " class="hiddenImg"><!--this image only appears on desktop to make the spacing make sense-->
 				<img  src="images/foodplate3.png" style="height:100%;">
 			</div>
 		</div>
-		<div id="orderAhead" style="padding: 2%;">
+		<div id="orderAhead" style="padding: 2%;"><!--make the big order form-->
 					<h1>Order Ahead</h1>
 					<p>Fill out our form below to submit your order. Click the menu buttons to make a selection</p>
 					
@@ -92,11 +92,12 @@
 						<label for="ftime">Pickup Time: </label>
 						<input type="text" name="ftime">
 						<br>
-						<h3>Your Order</h3>
-						<h2>Entrees</h2>
+						<h3 style="font-size: 2.25em;">Your Order</h3>
+						<br>
+						<h3>Entrees</h3><!---some headins within the form to improve readability-->
 						<hr>
-						<div class="menuButton" onclick="getElementById('menu').style.display = 'block'; ">Veiw Entrees</div>
-						<div style="display: flex; flex-direction: column;">
+						<div class="menuButton" onclick="getElementById('menu').style.display = 'block'; ">Veiw Entrees</div><!--this element used to be a button, but putting a button inside a form breaks the onclick script, so instead this is a div with some bottonlike properties-->
+						<div style="display: flex; flex-direction: column;"><!--this holds the menu options-->
 							<div>
 								<input class="orderNum" type="number" name="ropaVieja">
 								<label for="ropaVieja">Ropa Vieja</label>
@@ -134,9 +135,9 @@
 							</div>
 						</div>
 						<br>
-						<h2>Appetizers</h2>
+						<h3>Appetizers</h3><!--second menu section-->
 						<hr>
-						<div class="menuButton" onclick="alert('feature still under construction')">Veiw Appetizers</div>
+						<div class="menuButton" onclick="alert('feature still under construction')">Veiw Appetizers</div><!--added a quick script here to make sure the user knew things weren't finished-->
 						<div style="display: flex; flex-direction: column;">
 							<div>
 								<input class="orderNum" type="number" name="ropaVieja">
@@ -169,14 +170,16 @@
 
 							</div>
 						</div>
-
+						<!--in the fully finished website this would be followed by desserts, soups, dirnks, and the other menu sections-->
 						<br>
 						<input type="submit" name="submit">	
 					</form>
 			</div>
-			<div id="menu" style="position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px;   width: 100%; display: none; z-index: 2; padding: 10%; background-color: rgba(0, 0, 0, .30);" >
-				<div style="display: flex; flex-direction: column; background-color: #f2f4f3; margin: auto; padding: 4%;">
-					<h1>Mirna's Entrees</h1>
+			<!--now create the menu that pops up when the user clicks the div.-->
+			<div class="menu" id="menu" style="position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px;   width: 100%; display: none; z-index: 2; padding: 10%; background-color: rgba(0, 0, 0, .30);" ><!--create the dark background behind the menu-->
+				<div style="display: flex; flex-direction: column; background-color: #f2f4f3; margin: auto; padding: 4%;"><!--create the whitespace the menu is displayed in-->
+					<h1>Mirna's Entrees</h1><!--add the menu items-->
+					<hr>
 					<h2>Ropa Vieja</h2>
 						<p>Shredded beef with diced bell peppers, cilantro, and onion. Served with choice of sides. $10.50</p>
 					<h2>Vaca Frita</h2>
@@ -191,7 +194,8 @@
 						<p>Juicy and tender skirt steak, cooked on the grill and served with "Chimichurri" on the side. $13.75</p>
 					<h2>Chicken Steak</h2>
 						<p>Grilled chicken steak with sauteed onions. With choice of sides. $9.75</p>
-					<button style="padding: 1%" onclick="getElementById('menu').style.display='none'">Hide Menu</button>
+					<br>
+					<button style="padding: 1%" onclick="getElementById('menu').style.display='none'"><p>Hide Menu</p></button><!--add a way to hide the menu after it is opened-->
 				</div>
 			</div>
 	<script src="Javascript/hamMenuScript.js"></script>

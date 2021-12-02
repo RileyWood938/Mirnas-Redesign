@@ -6,6 +6,10 @@
 body{
 	background-color: #06aed5;
 }
+.menu h2{
+	font-size: 1.5em;
+	margin-top: 1%;
+}
 .navbar{
 	width: 100%;
 	background-color: #06aed5;
@@ -106,26 +110,6 @@ input{
 input[type=submit]{
 	width: 50%;
 }
-/*style for the image grid*/
-.row{ 
-	padding: .5%;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0%, 2%;
-	flex-direction: column;
-}
-.column{
-	flex: 1;
-}
-.column img{
-	vertical-align: middle;
-	width: 100%;
-	position: relative;
-}
-.column img:hover{
-	box-shadow: 5px 5px 30px black;
-	z-index: 1;
-	}
 input [type='checkbox']{
 	display: inline-block;
 	float: right;
