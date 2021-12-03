@@ -65,6 +65,9 @@ body{
 	border: 1px solid grey;
 	z-index: 3;
 }
+.popupItem h2{
+	font-size: 1.5em;
+}
 h2{
 	font-size: 3em;
 	font-family: Helvetica;
