@@ -20,6 +20,7 @@ body{/*this is also mostly paralax setup*/
 .navbar{
 	width: 100%;
 	background-color: #06aed5;
+	display: flex;
 	
 }
 .navbar a {/*adjust the look of the elemnts of the navbar*/
@@ -42,14 +43,14 @@ body{/*this is also mostly paralax setup*/
 	display: none;
 	margin: auto;
 }
-.hamburger{/*style the hamburgur menu*/
+.hamburger{/*style the hamburgur menu icon*/
 	display: flex;
 	flex-direction: column;
-	float: right;
 	width: 25px;
 	height: 25px;
-	margin: 1%;
+	margin: 3%;
 	background-color: inherit;
+	margin-left: auto;
 }
 .hamBar{/*add the rounded corners to the individual parts of the hamburgur menu*/
 	height: 33%;

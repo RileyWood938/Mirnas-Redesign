@@ -13,7 +13,7 @@ body{
 .navbar{
 	width: 100%;
 	background-color: #06aed5;
-	
+	display: flex;
 }
 .navbar a {
 	text-decoration: none;
@@ -33,14 +33,14 @@ body{
 	display: none;
 	margin: auto;
 }
-.hamburger{
+.hamburger{/*style the hamburgur menu icon*/
 	display: flex;
 	flex-direction: column;
-	float: right;
 	width: 25px;
 	height: 25px;
-	margin: 1%;
+	margin: 3%;
 	background-color: inherit;
+	margin-left: auto;
 }
 .hamBar{
 	height: 33%;
