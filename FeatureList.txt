@@ -1,0 +1,18 @@
+Feature: Rebuild Navigation Bar
+Requirements: CSS rounded corners, Flexbox, Top Navigation bar, Interactive Buttons, Works on Mobile and different sized browsers, Copmpatible with Chrom
+
+Feature: Redesign how reveiws are displayed
+Requirements: flexbox, works on mobile and different size browsers, compatable with chrome, css card Layout
+
+Feature: Rebuild Gallery page
+Requirements:Responsive Image Grid
+
+Feature: Collabsable top navigation
+Requirements: conditionals, DOM, access objects, events
+
+Feature: Create warning of next holiday closure
+Requirements: conditionals, loops, DOM, Acess objects, innerHTML, events
+
+Feature: Parallax Scrolling
+Requirements: CSS Background Images, works on mobile and different size browsers , works on chrome
+
